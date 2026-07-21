@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #f7faf9;
+  --foreground: #0a1f33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 0% 8%, rgba(16, 185, 129, 0.08), transparent 29rem),
+    linear-gradient(180deg, #f8fbfa 0%, #ffffff 44%, #f4f8f6 100%);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.24);
+  color: #061521;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-[1380px] px-5 sm:px-7 lg:px-10;
+}
+
+.eyebrow {
+  @apply text-[11px] font-bold uppercase tracking-[0.22em] text-emerald-700;
+}
+
+.premium-card {
+  @apply border border-white/70 bg-white/90 shadow-premium backdrop-blur;
+}
+
+.dark-panel {
+  @apply border border-white/10 bg-navy-950 text-white shadow-premium;
+}
+
+.hero-surface {
+  background:
+    radial-gradient(circle at 75% 30%, rgba(16, 185, 129, 0.12), transparent 28rem),
+    radial-gradient(circle at 10% 80%, rgba(217, 164, 65, 0.08), transparent 25rem),
+    linear-gradient(135deg, #061521 0%, #0a1f33 48%, #082638 100%);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 94%);
+}
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero-orb-one {
+  right: -8rem;
+  top: 4rem;
+  height: 28rem;
+  width: 28rem;
+  background: rgba(16, 185, 129, 0.11);
+}
+
+.hero-orb-two {
+  bottom: -14rem;
+  left: 15%;
+  height: 27rem;
+  width: 27rem;
+  background: rgba(217, 164, 65, 0.08);
+}
+
+.intelligence-console {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2rem;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.025));
+  box-shadow: 0 45px 120px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.platform-visual {
+  background:
+    radial-gradient(circle at 75% 15%, rgba(217, 164, 65, 0.18), transparent 12rem),
+    linear-gradient(145deg, #061521, #10324a);
+}
+
+.founder-portrait-placeholder {
+  background:
+    radial-gradient(circle at 50% 28%, rgba(16, 185, 129, 0.18), transparent 12rem),
+    linear-gradient(145deg, #dfe9e5, #b9cbc4);
+}
+
+.brand-mark {
+  display: flex;
+  height: 2.8rem;
+  width: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.85rem;
+  background: linear-gradient(145deg, #061521, #12304a);
+  color: #f8d57e;
+  font-size: 1rem;
+  font-weight: 900;
+  box-shadow: 0 12px 30px rgba(6, 21, 33, 0.18);
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center gap-3 rounded-xl bg-emerald-400 px-6 py-4 text-center text-sm font-bold text-navy-950 shadow-[0_16px_40px_rgba(16,185,129,0.18)] transition hover:-translate-y-0.5 hover:bg-emerald-300;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/[0.04] px-6 py-4 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-gold-300/60 hover:text-gold-300;
+}
+
+.ie-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(217, 164, 65, 0.13), transparent 28rem),
+    radial-gradient(circle at 16% 75%, rgba(16, 185, 129, 0.12), transparent 30rem),
+    linear-gradient(135deg, #04111d 0%, #071d30 48%, #073049 100%);
+}
+
+.ie-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.ie-orb-one {
+  right: -10rem;
+  top: 7rem;
+  height: 32rem;
+  width: 32rem;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.ie-orb-two {
+  bottom: -13rem;
+  left: 18%;
+  height: 28rem;
+  width: 28rem;
+  background: rgba(217, 164, 65, 0.08);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, #f6d884 0%, #ffffff 52%, #8ff0cb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.intelligence-radial-grid {
+  background-image:
+    radial-gradient(circle at center, transparent 0 18%, rgba(255, 255, 255, 0.07) 18.3% 18.7%, transparent 19% 33%, rgba(255, 255, 255, 0.05) 33.3% 33.7%, transparent 34%),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: auto, 30px 30px, 30px 30px;
+}
+
+.ie-core::before,
+.ie-core::after {
+  content: "";
+  position: absolute;
+  inset: -3.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+}
+
+.ie-core::after {
+  inset: -6.3rem;
+  border-color: rgba(16, 185, 129, 0.12);
+}
+
+.article-prose {
+  color: #334155;
+}
+
+.article-lead {
+  margin: 0 0 2.5rem;
+  border-left: 4px solid #10b981;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #0a1f33;
+}
+
+.article-section {
+  margin-top: 2.75rem;
+}
+
+.article-section h2 {
+  margin-bottom: 1.15rem;
+  font-size: clamp(1.55rem, 2vw, 2.15rem);
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0a1f33;
+}
+
+.article-section p {
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.95;
+  color: #475569;
+}
+
+.article-section ul {
+  margin-top: 1.4rem;
+  display: grid;
+  gap: 0.9rem;
+  padding-left: 1.4rem;
+  list-style: disc;
+}
+
+.article-section li {
+  padding-left: 0.35rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.article-section li::marker {
+  color: #10b981;
+}
+
+.article-section blockquote {
+  margin: 2.5rem 0;
+  border-radius: 1.5rem;
+  background: #061521;
+  padding: 2rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.65;
+  color: #ffffff;
+  box-shadow: 0 22px 60px rgba(6, 21, 33, 0.16);
+}
+
+@media print {
+  nav,
+  footer,
+  aside,
+  button,
+  .print-hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .article-prose {
+    max-width: none !important;
+  }
+}
+
+/* Chumcred Design System — Milestone 2.0 */
+@layer components {
+  .cds-section {
+    @apply py-20 sm:py-24;
+  }
+
+  .cds-panel {
+    @apply rounded-[1.75rem] border border-slate-200 bg-white shadow-premium;
+  }
+
+  .cds-focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2;
+  }
+}
