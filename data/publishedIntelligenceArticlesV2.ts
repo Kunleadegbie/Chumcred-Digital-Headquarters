@@ -1,7 +1,7 @@
 import {
   intelligenceArticles as publishedArticles,
   type PublishedIntelligenceArticle,
-} from "@/data/publishedIntelligenceArticles";
+} from "@/data/publishedIntelligenceArticlesBase";
 
 const articleFour: PublishedIntelligenceArticle = {
   slug: "five-pillars-of-intelligence-capital",
