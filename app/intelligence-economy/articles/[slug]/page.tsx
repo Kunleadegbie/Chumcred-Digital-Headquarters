@@ -8,7 +8,7 @@ import {
   getArticleBySlug,
   getRelatedArticles,
   intelligenceArticles,
-} from "@/data/intelligenceArticles";
+} from "@/data/publishedIntelligenceArticles";
 
 export function generateStaticParams() {
   return intelligenceArticles.map((article) => ({ slug: article.slug }));
@@ -158,9 +158,8 @@ export default async function ArticlePage({
                 Explore, share, and apply the ideas
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">
-                Download the publication, share it with your network, or connect
-                the article to Chumcred’s frameworks, executive education, and
-                TIEN community.
+                Share the publication with your network or connect the article to
+                Chumcred’s frameworks, executive education, and TIEN community.
               </p>
               <div className="mt-7">
                 <ArticleActions title={article.title} pdfPath={article.pdfPath} />
@@ -188,6 +187,21 @@ export default async function ArticlePage({
                   <dt className="font-semibold text-navy-950">Reading time</dt>
                   <dd className="mt-1 text-slate-500">{article.readingTime}</dd>
                 </div>
+                {article.sourceUrl ? (
+                  <div>
+                    <dt className="font-semibold text-navy-950">Original publication</dt>
+                    <dd className="mt-1">
+                      <a
+                        href={article.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-emerald-700 transition hover:text-emerald-800"
+                      >
+                        View on LinkedIn →
+                      </a>
+                    </dd>
+                  </div>
+                ) : null}
               </dl>
             </div>
 
