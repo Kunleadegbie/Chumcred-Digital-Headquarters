@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { intelligenceArticles } from "@/data/intelligenceArticles";
+import { intelligenceArticles } from "@/data/publishedIntelligenceArticles";
 import { frameworkPublications, researchPublications } from "@/data/intelligencePublications";
 
 export default function sitemap(): MetadataRoute.Sitemap {
