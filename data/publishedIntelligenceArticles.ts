@@ -113,9 +113,126 @@ const articleOne: PublishedIntelligenceArticle = {
   ],
 };
 
+const articleTwo: PublishedIntelligenceArticle = {
+  slug: "from-information-to-intelligence",
+  series: "The Intelligence Economy Series",
+  articleNumber: 2,
+  category: "Intelligence Economy",
+  title: "From Information to Intelligence: Why Information Is No Longer Enough",
+  subtitle:
+    "Information defined the last economy. The next era will be shaped by the ability to transform information into insight, decisions, and value.",
+  excerpt:
+    "Information is no longer scarce. Competitive advantage now depends on how effectively organisations interpret information, recognise patterns, apply judgement, and convert insight into action.",
+  publishedAt: "2026-07-24",
+  readingTime: "5 min read",
+  author: {
+    name: "Adekunle Adegbie, PhD",
+    role: "Founder & Chief Executive, Chumcred Limited",
+  },
+  featured: false,
+  keywords: [
+    "The Intelligence Economy",
+    "Intelligence Capital",
+    "Artificial Intelligence",
+    "Leadership",
+    "Future of Work",
+    "Digital Transformation",
+    "Innovation",
+    "TIEN",
+    "Information Economy",
+    "Business Intelligence",
+    "Decision Intelligence",
+  ],
+  relatedFrameworks: [
+    "Intelligence Capital Framework™",
+    "Intelligence Value Chain™",
+    "The Five Pillars of Intelligence Capital™",
+  ],
+  pdfPath: "",
+  sourceUrl:
+    "https://www.linkedin.com/feed/update/urn:li:activity:7483756813700636672?utm_source=share&utm_medium=member_ios&rcm=ACoAABMjArcBWBK3Ax47chawJTCvYX1Miu75haI",
+  sections: [
+    {
+      quote:
+        "Information was the defining asset of the last economy. Intelligence will be the defining asset of the next.",
+    },
+    {
+      heading: "Information became the currency of the last economy",
+      paragraphs: [
+        "For decades, organisations competed to collect more information.",
+        "They built databases, implemented ERP systems, invested in Business Intelligence platforms, and accumulated vast amounts of data.",
+        "Information became the currency of the Information Economy.",
+      ],
+    },
+    {
+      heading: "Information is no longer scarce",
+      paragraphs: [
+        "But today, something has changed.",
+        "Information is no longer scarce—it is everywhere.",
+        "Every minute, billions of searches are performed, millions of emails are exchanged, and enormous volumes of data are created.",
+        "Yet, while we have more information than ever before, many organisations are overwhelmed by it.",
+      ],
+    },
+    {
+      heading: "More information does not guarantee better outcomes",
+      paragraphs: [
+        "More information does not automatically lead to better decisions, innovation, or competitive advantage.",
+        "Information without interpretation often creates confusion rather than clarity.",
+        "This is where the Intelligence Economy begins.",
+      ],
+    },
+    {
+      heading: "From information to intelligence",
+      paragraphs: [
+        "Tomorrow’s leaders will not be those with the largest databases, but those that transform information into insight, insight into decisions, and decisions into value.",
+        "That transformation is what I call intelligence.",
+        "Intelligence is more than data or knowledge. It is the ability to understand context, recognise patterns, anticipate change, solve problems, and make better decisions.",
+      ],
+    },
+    {
+      heading: "Human intelligence and artificial intelligence must work together",
+      paragraphs: [
+        "Artificial Intelligence is accelerating this shift, but technology alone is not enough.",
+        "Without human judgement, creativity, ethics, and strategic thinking, AI remains a powerful tool—not a complete solution.",
+        "The future belongs to organisations that combine human intelligence with artificial intelligence.",
+      ],
+    },
+    {
+      heading: "The new source of competitive advantage",
+      paragraphs: [
+        "That is why I believe we are moving beyond the Information Economy into the Intelligence Economy.",
+        "In this new era, success will not be determined by who owns the most information, but by who develops the greatest Intelligence Capital.",
+      ],
+    },
+    {
+      quote:
+        "How effectively are we turning information into intelligence?",
+    },
+    {
+      heading: "The question every leader should ask",
+      paragraphs: [
+        "The question every leader should now ask is no longer: ‘How much information do we have?’",
+        "Instead, it should be: ‘How effectively are we turning information into intelligence?’",
+        "The organisations that answer this question first will define the next decade.",
+      ],
+    },
+    {
+      heading: "Next in the series",
+      paragraphs: [
+        "This is Article 2 of The Intelligence Economy Series.",
+        "In Article 3, we will explore Intelligence Capital—why I believe it will become one of the most valuable strategic assets of the 21st century.",
+        "Shaping the Future Through Intelligence.",
+      ],
+    },
+  ],
+};
+
 export const intelligenceArticles: PublishedIntelligenceArticle[] = [
   articleOne,
-  ...existingArticles.filter((article) => article.articleNumber !== 1),
+  articleTwo,
+  ...existingArticles.filter(
+    (article) => article.articleNumber !== 1 && article.articleNumber !== 2,
+  ),
 ];
 
 export function getArticleBySlug(slug: string) {
