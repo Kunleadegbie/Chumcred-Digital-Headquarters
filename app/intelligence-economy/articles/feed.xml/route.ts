@@ -1,4 +1,4 @@
-import { intelligenceArticles } from "@/data/intelligenceArticles";
+import { intelligenceArticles } from "@/data/publishedIntelligenceArticles";
 
 function escapeXml(value: string) {
   return value
