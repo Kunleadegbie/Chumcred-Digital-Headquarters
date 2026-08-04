@@ -227,11 +227,127 @@ const articleTwo: PublishedIntelligenceArticle = {
   ],
 };
 
+const articleThree: PublishedIntelligenceArticle = {
+  slug: "intelligence-capital-most-valuable-asset",
+  series: "The Intelligence Economy Series",
+  articleNumber: 3,
+  category: "Intelligence Capital",
+  title: "Intelligence Capital: The Most Valuable Asset of the 21st Century",
+  subtitle:
+    "The defining advantage of the Intelligence Economy will not be access to AI alone, but the organisational capacity to learn, think, decide, innovate, and convert knowledge into intelligent action.",
+  excerpt:
+    "As artificial intelligence becomes more accessible, technology itself will become less differentiating. The organisations that lead will be those that intentionally build and deploy the strongest Intelligence Capital.",
+  publishedAt: "2026-07-26",
+  readingTime: "5 min read",
+  author: {
+    name: "Adekunle Adegbie, PhD",
+    role: "Founder & Chief Executive, Chumcred Limited",
+  },
+  featured: false,
+  keywords: [
+    "The Intelligence Economy",
+    "Intelligence Capital",
+    "Artificial Intelligence",
+    "Leadership",
+    "Future of Work",
+    "Innovation",
+    "Digital Transformation",
+    "TIEN",
+    "Competitive Advantage",
+    "Organisational Intelligence",
+  ],
+  relatedFrameworks: [
+    "Intelligence Capital Framework™",
+    "The Five Pillars of Intelligence Capital™",
+    "Intelligence Value Chain™",
+  ],
+  pdfPath: "",
+  sourceUrl:
+    "https://www.linkedin.com/feed/update/urn:li:activity:7483773736664379392?utm_source=share&utm_medium=member_ios&rcm=ACoAABMjArcBWBK3Ax47chawJTCvYX1Miu75haI",
+  sections: [
+    {
+      quote:
+        "The greatest asset of the Intelligence Economy is not Artificial Intelligence. It is Intelligence Capital.",
+    },
+    {
+      heading: "Every economic era values a defining asset",
+      paragraphs: [
+        "Every economic era has been defined by the asset it valued most.",
+        "The Agricultural Economy was built on land.",
+        "The Industrial Economy was built on machines and factories.",
+        "The Information Economy was built on data and knowledge.",
+        "So what is the defining asset of the Intelligence Economy?",
+        "I believe it is Intelligence Capital.",
+      ],
+    },
+    {
+      heading: "What Intelligence Capital really means",
+      paragraphs: [
+        "Intelligence Capital is not software.",
+        "It is not data.",
+        "It is not technology.",
+        "It is the collective ability of people and organisations to learn continuously, think critically, make better decisions, solve complex problems, innovate consistently, and combine human intelligence with artificial intelligence to create value.",
+        "In other words, Intelligence Capital is an organisation’s capacity to transform knowledge into intelligent action.",
+      ],
+    },
+    {
+      heading: "Why similar technology produces different outcomes",
+      paragraphs: [
+        "This is why two organisations with similar technology can achieve completely different results.",
+        "The difference is rarely the technology itself.",
+        "The difference is how intelligently they use it.",
+      ],
+    },
+    {
+      heading: "The characteristics of strong Intelligence Capital",
+      paragraphs: [
+        "Organisations with strong Intelligence Capital ask better questions.",
+        "They learn faster.",
+        "They adapt more quickly.",
+        "They make better decisions.",
+        "And over time, they outperform competitors that invest only in technology.",
+      ],
+    },
+    {
+      heading: "Technology will become accessible. Intelligence will differentiate.",
+      paragraphs: [
+        "As Artificial Intelligence becomes more accessible, technology will no longer be the greatest differentiator.",
+        "Intelligence will.",
+        "This means leaders must begin investing in Intelligence Capital just as intentionally as they invest in financial, human, and intellectual capital.",
+      ],
+    },
+    {
+      quote:
+        "The organisations that create the most value will not necessarily be those with the most advanced AI. They will be those that build the strongest Intelligence Capital.",
+    },
+    {
+      heading: "The real competitive advantage of the future",
+      paragraphs: [
+        "In the Intelligence Economy, the organisations that create the most value will not necessarily be those with the most advanced AI.",
+        "They will be those that build the strongest Intelligence Capital.",
+        "That is the real competitive advantage of the future.",
+      ],
+    },
+    {
+      heading: "Next in the series",
+      paragraphs: [
+        "This is Article 3 of The Intelligence Economy Series.",
+        "In Article 4, we will explore how organisations can begin building Intelligence Capital and prepare themselves to succeed in the Intelligence Economy.",
+        "Shaping the Future Through Intelligence.",
+      ],
+    },
+  ],
+};
+
 export const intelligenceArticles: PublishedIntelligenceArticle[] = [
   articleOne,
   articleTwo,
+  articleThree,
   ...existingArticles.filter(
-    (article) => article.articleNumber !== 1 && article.articleNumber !== 2,
+    (article) =>
+      article.articleNumber !== 1 &&
+      article.articleNumber !== 2 &&
+      article.articleNumber !== 3,
   ),
 ];
 
