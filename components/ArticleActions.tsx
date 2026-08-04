@@ -31,14 +31,16 @@ export default function ArticleActions({
 
   return (
     <div className="flex flex-wrap gap-3">
-      <a
-        href={pdfPath}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center rounded-xl bg-navy-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
-      >
-        Download PDF
-      </a>
+      {pdfPath ? (
+        <a
+          href={pdfPath}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center rounded-xl bg-navy-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
+        >
+          Download PDF
+        </a>
+      ) : null}
       <button
         type="button"
         onClick={shareArticle}

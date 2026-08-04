@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import IntelligenceArticleCard from "@/components/IntelligenceArticleCard";
 import IntelligencePageHero from "@/components/IntelligencePageHero";
 import IntelligenceSubnav from "@/components/IntelligenceSubnav";
-import { intelligenceArticles } from "@/data/intelligenceArticles";
+import { intelligenceArticles } from "@/data/publishedIntelligenceArticles";
 
 export const metadata: Metadata = {
   title: "Articles | Intelligence Economy",
