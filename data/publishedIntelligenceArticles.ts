@@ -2,6 +2,6 @@ export {
   intelligenceArticles,
   getArticleBySlug,
   getRelatedArticles,
-} from "@/data/publishedIntelligenceArticlesV7";
+} from "@/data/publishedIntelligenceArticlesV8";
 
 export type { PublishedIntelligenceArticle } from "@/data/publishedIntelligenceArticlesBase";
