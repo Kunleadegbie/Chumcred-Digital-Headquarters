@@ -3,12 +3,12 @@ import Link from "next/link";
 import IntelligencePageHero from "@/components/IntelligencePageHero";
 import IntelligenceSubnav from "@/components/IntelligenceSubnav";
 import PublicationFilter from "@/components/PublicationFilter";
-import { researchPublications } from "@/data/intelligencePublications";
+import { researchPublications } from "@/data/researchCentrePublications";
 import { researchCollections } from "@/data/intelligenceEconomy";
 
 export const metadata: Metadata = {
   title: "Research Centre | Chumcred Intelligence Institute",
-  description: "Executive briefs, white papers, research reports, industry studies, and applied intelligence for leaders and institutions.",
+  description: "Position papers, executive briefs, white papers, research reports, industry studies, and applied intelligence for leaders and institutions.",
 };
 
 export default function ResearchPage() {
@@ -18,7 +18,7 @@ export default function ResearchPage() {
       <IntelligenceSubnav />
       <section id="publications" className="scroll-mt-36 py-20 sm:py-28">
         <div className="section-shell">
-          <div className="max-w-3xl"><p className="eyebrow">Initial publication collection</p><h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-navy-950">Research designed for decision and action.</h2><p className="mt-5 text-lg leading-9 text-slate-600">Search the current collection by publication type, topic, industry, or keyword. Further research reports and sector studies will be added progressively.</p></div>
+          <div className="max-w-3xl"><p className="eyebrow">Institutional publication collection</p><h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-navy-950">Research designed for decision and action.</h2><p className="mt-5 text-lg leading-9 text-slate-600">Search the current collection by publication type, topic, industry, or keyword. Position papers, executive briefs, white papers, research reports, and sector studies will be added progressively.</p></div>
           <div className="mt-10"><PublicationFilter publications={researchPublications} /></div>
         </div>
       </section>
