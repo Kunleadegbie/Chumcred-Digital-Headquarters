@@ -2,9 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import type { ResearchPublication } from "@/data/intelligencePublications";
+import type { ResearchCentrePublication } from "@/data/researchCentrePublications";
 
-export default function PublicationFilter({ publications }: { publications: ResearchPublication[] }) {
+export default function PublicationFilter({ publications }: { publications: ResearchCentrePublication[] }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("All");
 
@@ -19,7 +19,7 @@ export default function PublicationFilter({ publications }: { publications: Rese
         <label className="sr-only" htmlFor="publication-search">Search publications</label>
         <input id="publication-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search by title, topic, industry, or keyword" className="min-h-12 rounded-xl border border-slate-200 px-4 text-sm outline-none transition focus:border-emerald-500" />
         <div className="flex flex-wrap gap-2">
-          {["All", "Executive Brief", "White Paper"].map((option) => (
+          {["All", "Position Paper", "Executive Brief", "White Paper"].map((option) => (
             <button key={option} type="button" onClick={() => setType(option)} className={`rounded-full px-4 py-3 text-xs font-bold transition ${type === option ? "bg-navy-950 text-white" : "bg-slate-100 text-slate-600 hover:bg-emerald-50 hover:text-emerald-800"}`}>{option}</button>
           ))}
         </div>
