@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,9 @@ const companyLinks = [
   ["Platforms", "/platforms"],
   ["Academy", "/academy"],
   ["Partnerships", "/partnerships"],
-  ["Contact", "/contact"]
+  ["Contact", "/contact"],
+  ["Support", "/support"],
+  ["Privacy Policy", "/privacy"]
 ];
 
 const instituteLinks = [
@@ -43,18 +46,29 @@ export default function Footer() {
           <p className="mt-7 max-w-md text-sm leading-7 text-white/62">
             Building intelligent platforms, stronger workforces, financial insight, executive capability, and transformation systems for Africa&apos;s future.
           </p>
-          <p className="mt-6 text-sm font-semibold text-emerald-300">Built for African realities. Powered by intelligence. Driven by impact.</p>
+          <p className="mt-6 text-sm font-semibold text-emerald-300">
+            Built for African realities. Powered by intelligence. Driven by impact.
+          </p>
         </div>
 
         <FooterColumn title="Company" links={companyLinks} />
         <FooterColumn title="Intelligence Institute" links={instituteLinks} />
 
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold-300">Connect</h3>
+          <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold-300">
+            Connect
+          </h3>
           <div className="mt-6 grid gap-3 text-sm text-white/62">
-            <a href="mailto:info@chumcred.com" className="transition hover:text-white">info@chumcred.com</a>
-            <a href="mailto:partnerships@chumcred.com" className="transition hover:text-white">partnerships@chumcred.com</a>
-            <Link href="/contact" className="mt-3 inline-flex w-fit rounded-xl border border-white/15 px-4 py-3 font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300">
+            <a href="mailto:info@chumcred.com" className="transition hover:text-white">
+              info@chumcred.com
+            </a>
+            <a href="mailto:partnerships@chumcred.com" className="transition hover:text-white">
+              partnerships@chumcred.com
+            </a>
+            <Link
+              href="/contact"
+              className="mt-3 inline-flex w-fit rounded-xl border border-white/15 px-4 py-3 font-semibold text-white transition hover:border-emerald-300 hover:text-emerald-300"
+            >
               Start a conversation
             </Link>
           </div>
@@ -64,7 +78,8 @@ export default function Footer() {
       <div className="relative border-t border-white/10">
         <div className="section-shell flex flex-col gap-3 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Chumcred Limited. All rights reserved.</p>
-          <div className="flex flex-wrap gap-5">\n            <Link href="/support">Support</Link>
+          <div className="flex flex-wrap gap-5">
+            <Link href="/support">Support</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
           </div>
@@ -74,13 +89,25 @@ export default function Footer() {
   );
 }
 
-function FooterColumn({ title, links }: { title: string; links: string[][] }) {
+function FooterColumn({
+  title,
+  links
+}: {
+  title: string;
+  links: string[][];
+}) {
   return (
     <div>
-      <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold-300">{title}</h3>
+      <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-gold-300">
+        {title}
+      </h3>
       <div className="mt-6 grid gap-3">
         {links.map(([label, href]) => (
-          <Link key={label} href={href} className="text-sm text-white/62 transition hover:text-white">
+          <Link
+            key={label}
+            href={href}
+            className="text-sm text-white/62 transition hover:text-white"
+          >
             {label}
           </Link>
         ))}
