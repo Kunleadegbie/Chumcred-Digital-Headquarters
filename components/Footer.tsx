@@ -64,7 +64,7 @@ export default function Footer() {
       <div className="relative border-t border-white/10">
         <div className="section-shell flex flex-col gap-3 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Chumcred Limited. All rights reserved.</p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">\n            <Link href="/support">Support</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
           </div>
